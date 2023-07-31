@@ -1,0 +1,242 @@
+.content {
+    --background: #8BBE8A;
+}
+
+.header__container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: #8BBE8A;
+
+    .header__container__back {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 11.05%;
+        bottom: 11.05%;
+        font-size: 25px;
+        color: white;
+    }
+
+    .header__container__title {
+        position: absolute;
+        width: 650px;
+        height: 119px;
+        left: -86px;
+        top: 25px;
+        font-family: 'SF Pro Display Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 119px;
+        text-align: center;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+        -webkit-text-fill-color: transparent;
+    }
+
+    .header__container__img {
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        left: 40px;
+        top: 95px;
+    }
+
+    .header__container__info__number {
+        position: absolute;
+        width: 39px;
+        height: 19px;
+        left: 190px;
+        top: 114px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(23, 23, 27, 0.6);
+    }
+
+    .header__container__info__name {
+        position: absolute;
+        width: 148px;
+        height: 38px;
+        left: 190px;
+        top: 133px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
+
+    .header__container__types {
+        justify-content: center;
+        text-align: center;
+        width: 61px;
+        height: 25px;
+        position: absolute;
+        left: 190px;
+        top: 180px;
+        margin-top: 5px;
+    }
+
+    .header__container__types__icon {
+        font-size: 15px;
+    }
+
+    .header__container__types__text {
+        font-size: 12px;
+        background-color: #62B957;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    .header__button1 {
+        position: absolute;
+        width: 45px;
+        height: 19px;
+        left: 46px;
+        top: 281px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .header__button2 {
+        position: absolute;
+        width: 39px;
+        height: 19px;
+        left: 187px;
+        top: 281px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .header__button3 {
+        position: absolute;
+        width: 68px;
+        height: 19px;
+        left: 311px;
+        top: 281px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+}
+
+.detail__container {
+    border-radius: 30px 30px 0px 0px;
+    background-color: white;
+
+    .detail__container__data {
+        padding: 20px 40px;
+    }
+
+    .about__text {
+        font-size: 15px;
+        line-height: 19px;
+        color: #747476;
+    }
+
+    .detail__data__title {
+        font-size: 16px;
+        color: #62B957;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 22px;
+    }
+
+    .detail__data__title1 {
+        font-size: 16px;
+        color: #62B957;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 22px;
+    }
+
+    .about__data__info {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .about__data__info h1 {
+        margin: 0;
+        font-size: 12px;
+        color: #17171B;
+        width: 85px;
+    }
+
+    .about__data__info p {
+        margin: 0;
+        font-size: 16px;
+        color: #747476;
+    }
+
+    .stats__data__info {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .stats__data__info h1 {
+        margin: 0;
+        font-size: 12px;
+        color: #17171B;
+        width: 85px;
+    }
+
+    .stats__data__info p {
+        margin: 0;
+        font-size: 16px;
+        color: #747476;
+    }
+
+    .stats__data__info p:nth-child(4) {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .stats__data__info ion-progress-bar {
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-right: 40px;
+    }
+
+    .stats__text{
+        font-size: 12px;
+        line-height: 14px;
+        color: #747476;
+    }
+    .stats__icons{
+        margin-top: 30px;
+    }
+
+    .stats__icons__layer{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+
+    
+}

@@ -1,0 +1,290 @@
+<ion-content class="content">
+  <div class="header__container">
+    <ion-icon name="arrow-back" class="header__container__back"></ion-icon>
+    <ion-label class="header__container__title" style="text-transform: uppercase">Bulbasaur</ion-label>
+    <div class="header__container__data">
+      <div class="header__container__img">
+        <ion-img src="../../../assets/generations/001.png"></ion-img>
+      </div>
+      <div class="header__container__info">
+        <p class="header__container__info__number">#001</p>
+        <h1 class="header__container__info__name">Bulbasaur</h1>
+        <div class="header__container__types">
+          <p class="header__container__types__text"><ion-icon src="../../../assets/types/bug2.svg"
+              class="header__container__types__icon"></ion-icon>Grass</p>
+        </div>
+      </div>
+    </div>
+    <div class="header__buttons">
+      <p (click)="showAbout()" class="header__button1">About</p>
+      <p (click)="showStats()" class="header__button2">Stats</p>
+      <p (click)="showEvolution()" class="header__button3">Evolution</p>
+    </div>
+  </div>
+
+  <div class="detail__container" *ngIf="about">
+    <div class="detail__container__data">
+      <p class="about__text">Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking
+        up the sun's rays, the
+        seed grows progressively larger.</p>
+      <h1 class="detail__data__title">Pokédex Data</h1>
+      <div class="about__data__info">
+        <h1>Species</h1>
+        <p>Seed Pokémon</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Height</h1>
+        <p>2'04"</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Weight</h1>
+        <p>15.2 lbs</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Abilities</h1>
+        <p>Overgrow</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Weaknesses</h1>
+        <p>Fire, Flying, Ice, Psychic</p>
+      </div>
+      <h1 class="detail__data__title">Training</h1>
+      <div class="about__data__info">
+        <h1>EV Yield</h1>
+        <p>1 Special Attack</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Catch Rate</h1>
+        <p>45 (5.9% with PokéBall, full HP)</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Base Friendship</h1>
+        <p>70 (Medium Fast)</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Base Exp</h1>
+        <p>64</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Growth Rate</h1>
+        <p>Medium Slow</p>
+      </div>
+      <h1 class="detail__data__title">Breeding</h1>
+      <div class="about__data__info">
+        <h1>Gender</h1>
+        <p>♀ 87.5%, ♂ 12.5%</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Egg Groups</h1>
+        <p>Monster, Grass</p>
+      </div>
+      <div class="about__data__info">
+        <h1>Egg Cycles</h1>
+        <p>20 (5100 steps)</p>
+      </div>
+      <h1 class="detail__data__title">Location</h1>
+      <div class="about__data__info">
+        <h1>001</h1>
+        <p>Red, Blue, Yellow</p>
+      </div>
+      <div class="about__data__info">
+        <h1>226</h1>
+        <p>Gold, Silver, Crystal</p>
+      </div>
+      <div class="about__data__info">
+        <h1>001</h1>
+        <p>(FireRed/LeafGreen)</p>
+      </div>
+      <div class="about__data__info">
+        <h1>231</h1>
+        <p>(HeartGold/SoulSilver)</p>
+      </div>
+      <div class="about__data__info">
+        <h1>080</h1>
+        <p>(X/Y - Central Kalos)</p>
+      </div>
+      <div class="about__data__info">
+        <h1>001</h1>
+        <p>(Let's Go Pikachu/Let's Go Eevee)</p>
+      </div>
+    </div>
+  </div>
+  <div class="detail__container" *ngIf="stats">
+    <div class="detail__container__data">
+      <h1 class="detail__data__title1">Base Stats</h1>
+      <div class="stats__container">
+        <div class="stats__data__info">
+          <h1>HP</h1>
+          <p>45</p>
+          <ion-progress-bar value="0.45" color="dark"></ion-progress-bar>
+          <p>200</p>
+          <p>294</p>
+        </div>
+        <div class="stats__data__info">
+          <h1>Attack</h1>
+          <p>49</p>
+          <ion-progress-bar value="0.45" color="dark"></ion-progress-bar>
+          <p>92</p>
+          <p>216</p>
+        </div>
+        <div class="stats__data__info">
+          <h1>Defense</h1>
+          <p>49</p>
+          <ion-progress-bar value="0.45" color="dark"></ion-progress-bar>
+          <p>92</p>
+          <p>216</p>
+        </div>
+        <div class="stats__data__info">
+          <h1>Sp. Atk</h1>
+          <p>65</p>
+          <ion-progress-bar value="0.45" color="dark"></ion-progress-bar>
+          <p>121</p>
+          <p>251</p>
+        </div>
+        <div class="stats__data__info">
+          <h1>Sp. Def</h1>
+          <p>65</p>
+          <ion-progress-bar value="0.45" color="dark"></ion-progress-bar>
+          <p>121</p>
+          <p>251</p>
+        </div>
+        <div class="stats__data__info">
+          <h1>Speed</h1>
+          <p>45</p>
+          <ion-progress-bar value="0.45" color="dark"></ion-progress-bar>
+          <p>85</p>
+          <p>207</p>
+        </div>
+        <div class="stats__data__info">
+          <h1>Total</h1>
+          <p style="font-weight: 700;">318</p>
+          <h1>Min</h1>
+          <h1>Max</h1>
+        </div>
+        <p class="stats__text">The ranges shown on the right are for a level 100 Pokémon. Maximum values are based on a
+          beneficial nature, 252 EVs, 31 IVs; minimum values are based on a hindering nature, 0 EVs, 0 IVs.</p>
+        <h1 class="detail__data__title">Type Defenses</h1>
+        <p class="about__text">The effectiveness of each type on Bulbasaur.</p>
+        <div class="stats__icons">
+          <div class="stats__icons__layer">
+            <ion-icon src="../../assets/types/normal1.svg" class="type__normal"></ion-icon>
+            <ion-icon src="../../assets/types/fire1.svg" class="type__fire"></ion-icon>
+            <ion-icon src="../../assets/types/water1.svg" class="type__water"></ion-icon>
+            <ion-icon src="../../assets/types/electric1.svg" class="type__electric"></ion-icon>
+            <ion-icon src="../../assets/types/grass1.svg" class="type__grass"></ion-icon>
+            <ion-icon src="../../assets/types/ice1.svg" class="type__ice"></ion-icon>
+            <ion-icon src="../../assets/types/fighting1.svg" class="type__fighting"></ion-icon>
+            <ion-icon src="../../assets/types/poison1.svg" class="type__poison"></ion-icon>
+            <ion-icon src="../../assets/types/ground1.svg" class="type__ground"></ion-icon>
+          </div>
+          <div class="stats__icons__layer">
+            <ion-icon src="../../assets/types/flying1.svg" class="type__flying"></ion-icon>
+            <ion-icon src="../../assets/types/psychic1.svg" class="type__psychic"></ion-icon>
+            <ion-icon src="../../assets/types/bug1.svg" class="type__bug"></ion-icon>
+            <ion-icon src="../../assets/types/rock1.svg" class="type__rock"></ion-icon>
+            <ion-icon src="../../assets/types/ghost1.svg" class="type__ghost"></ion-icon>
+            <ion-icon src="../../assets/types/dragon1.svg" class="type__dragon"></ion-icon>
+            <ion-icon src="../../assets/types/dark1.svg" class="type__dark"></ion-icon>
+            <ion-icon src="../../assets/types/steel1.svg" class="type__steel"></ion-icon>
+            <ion-icon src="../../assets/types/fairy1.svg" class="type__fairy"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="evolution__container" *ngIf="evolution">
+    <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the
+      seed grows progressively larger.</p>
+    <div>
+      <h1>Pokédex Data</h1>
+      <div>
+        <h1>Species</h1>
+        <p>Seed Pokémon</p>
+      </div>
+      <div>
+        <h1>Height</h1>
+        <p>2'04"</p>
+      </div>
+      <div>
+        <h1>Weight</h1>
+        <p>15.2 lbs</p>
+      </div>
+      <div>
+        <h1>Abilities</h1>
+        <p>Overgrow</p>
+      </div>
+
+      <div>
+        <h1>Weaknesses</h1>
+        <p>Fire, Flying, Ice, Psychic</p>
+      </div>
+    </div>
+    <div>
+      <h1>Training</h1>
+      <div>
+        <h1>EV Yield</h1>
+        <p>1 Special Attack</p>
+      </div>
+      <div>
+        <h1>Catch Rate</h1>
+        <p>45 (5.9% with PokéBall, full HP)</p>
+      </div>
+      <div>
+        <h1>Base Friendship</h1>
+        <p>70 (Medium Fast)</p>
+      </div>
+      <div>
+        <h1>Base Exp. Yield</h1>
+        <p>64</p>
+      </div>
+      <div>
+        <h1>Growth Rate</h1>
+        <p>Medium Slow</p>
+      </div>
+    </div>
+    <h1>Breeding</h1>
+    <div>
+      <div>
+        <h1>Gender</h1>
+        <p>♀ 87.5%, ♂ 12.5%</p>
+      </div>
+      <div>
+        <h1>Egg Groups</h1>
+        <p>Monster, Grass</p>
+      </div>
+      <div>
+        <h1>Egg Cycles</h1>
+        <p>20 (5100 steps)</p>
+      </div>
+    </div>
+    <h1>Location</h1>
+    <div>
+      <div>
+        <h1>001</h1>
+        <p>Red, Blue, Yellow</p>
+      </div>
+      <div>
+        <h1>226</h1>
+        <p>Gold, Silver, Crystal</p>
+      </div>
+    </div>
+    <div>
+      <h1>001</h1>
+      <p>(FireRed/LeafGreen)</p>
+    </div>
+    <div>
+      <h1>231</h1>
+      <p>(HeartGold/SoulSilver)</p>
+    </div>
+    <div>
+      <h1>080</h1>
+      <p>(X/Y - Central Kalos)</p>
+    </div>
+    <div>
+      <h1>001</h1>
+      <p>(Let's Go Pikachu/Let's Go Eevee)</p>
+    </div>
+  </div>
+
+
+</ion-content>
